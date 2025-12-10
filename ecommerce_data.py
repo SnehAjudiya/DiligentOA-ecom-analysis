@@ -154,8 +154,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--data-dir",
-        default=".",
-        help="Directory containing the CSV files (default: current directory).",
+        default="input_data",
+        help="Directory containing the CSV files (default: input_data).",
     )
     parser.add_argument(
         "--verbose",

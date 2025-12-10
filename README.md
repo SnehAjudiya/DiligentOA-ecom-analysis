@@ -16,7 +16,7 @@ This repo contains synthetic e-commerce CSV data, a SQLite ingestion script, and
 ## Load the data into SQLite
 From the repo folder:
 ```bash
-python ecommerce_data.py --db ecom.db --data-dir . --verbose
+python ecommerce_data.py --db ecom.db --data-dir input_data --verbose
 ```
 - Recreates tables each run (drops/rebuilds) and validates CSV headers.
 - Foreign keys are enabled; the loader inserts in dependency order.
