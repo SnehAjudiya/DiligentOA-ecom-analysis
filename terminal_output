@@ -1,0 +1,46 @@
+This is the Terminal Output text file.
+I used Python and SQLite to run the "ecommerce_data.py" file -> forms the database "ecom.db" -> ran sql queries from "queries.sql" in this ecom.db -> output file as "output.csv".
+
+sneh@Sneh:/mnt/c/Users/heeta/Desktop/DiligentOA$ python3 --version
+Python 3.12.3
+sneh@Sneh:/mnt/c/Users/heeta/Desktop/DiligentOA$ vi ecommerce_data.py
+sneh@Sneh:/mnt/c/Users/heeta/Desktop/DiligentOA$ python3 ecommerce_data.py
+sneh@Sneh:/mnt/c/Users/heeta/Desktop/DiligentOA$ vi ecom.db
+sneh@Sneh:/mnt/c/Users/heeta/Desktop/DiligentOA$ sqlite3 --version
+3.45.1 2024-01-30 16:01:20 e876e51a0ed5c5b3126f52e532044363a014bc594cfefa87ffb5b82257ccalt1 (64-bit)
+sneh@Sneh:/mnt/c/Users/heeta/Desktop/DiligentOA$ sqlite3 ecom.db < queries.sql
+C005|Emma Williams|2|488.98|Electronics
+C006|Felix Brown|1|399.0|Furniture
+C002|Brian Smith|2|268.99|Electronics
+C012|Liam Roberts|1|199.0|Electronics
+C011|Karen Miller|1|189.0|Furniture
+C001|Alice Johnson|2|109.97|Electronics,Accessories
+C003|Carla Ramirez|1|79.99|Electronics
+C013|Mia Thompson|1|69.98|Home
+C008|Henry Clark|1|59.99|Accessories
+C015|Olivia Garcia|1|51.96|Home
+C009|Ivy Nguyen|1|49.99|Electronics
+C014|Noah Anderson|1|49.0|Accessories
+C010|Jacob Davis|1|39.98|Electronics
+C004|David Lee|1|39.96|Stationery
+C007|Gina Martinez|1|19.47|Stationery
+P007|Standing Desk|Furniture|1|399.0
+P005|4K Monitor|Electronics|1|329.0
+P002|Mechanical Keyboard|Electronics|3|239.97
+P014|Smartwatch|Electronics|1|199.0
+P006|Office Chair|Furniture|1|189.0
+P013|Portable SSD 1TB|Electronics|1|139.0
+P004|Noise-Canceling Headphones|Electronics|1|129.99
+P010|Backpack|Accessories|2|119.98
+P016|Desk Lamp|Home|2|69.98
+P015|Ceramic Mug|Home|4|51.96
+P012|Webcam|Electronics|1|49.99
+P001|Wireless Mouse|Electronics|2|49.98
+P011|Laptop Sleeve|Accessories|2|49.0
+P003|USB-C Charger|Electronics|2|39.98
+P008|Notebook Pack|Stationery|4|39.96
+P009|Gel Pen Set|Stationery|3|19.47
+O1004|C005|Processing|Authorized|Credit Card|329.0
+O1011|C011|Processing|Pending|Bank Transfer|189.0
+O1017|C005|Processing|Authorized|Bank Transfer|159.98
+O1018|C001|Processing|Pending|Debit Card|59.99
